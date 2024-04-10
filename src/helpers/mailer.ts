@@ -54,7 +54,9 @@ export const sendEmail = async ({ email, emailType, userId }: any) => {
       from: "testuser6960@gmail.com", // sender address
       to: email, // list of receivers
       subject:
-        emailType === "VERIFY" ? "VERIFY your password" : "RESET your password",
+        emailType === "VERIFY"
+          ? "VERIFY your passwordf"
+          : "RESET your password",
       html: htmlContent,
     };
 
