@@ -21,7 +21,7 @@ export async function POST(request: NextRequest, resopnse: NextResponse) {
       );
     }
 
-    console.log("User exist");
+    // console.log("User exist");
 
     const validPassword = await bcryptjs.compare(password, user.password);
 

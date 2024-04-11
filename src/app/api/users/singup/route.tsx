@@ -12,7 +12,7 @@ export async function POST(request: NextRequest, resopnse: NextResponse) {
 
     // validation
 
-    console.log(username, email, password);
+    // console.log(username, email, password);
 
     const user = await User.findOne({ email });
 

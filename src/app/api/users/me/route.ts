@@ -16,7 +16,7 @@ export async function GET(request: NextRequest, resopnse: NextResponse) {
       return NextResponse.json({ message: "Invalid Token" }, { status: 403 });
     }
 
-    console.log(user);
+    // console.log(user);
 
     return NextResponse.json(
       { message: "User Found", data: user, success: true },
